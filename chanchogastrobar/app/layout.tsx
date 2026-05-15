@@ -18,21 +18,22 @@ const playfair = Playfair_Display({
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "El Chancho Gastrobar | Sabor Andino y Brasa en Vitoria-Gasteiz",
-  description: "Descubre El Chancho en Vitoria: un gastrobar donde el fuego tiene alma. Sabores andinos, productos locales y brasas honestas en el corazón de la ciudad.",
-  keywords: ["gastrobar vitoria", "restaurante vitoria-gasteiz", "cocina andina vitoria", "brasas vitoria", "comer en vitoria"],
+  title: "El Chancho Gastrobar | Fuego, Origen & Contraste en Vitoria-Gasteiz",
+  description: "Descubre El Chancho Gastrobar en Vitoria-Gasteiz. Cocina honesta a la brasa, producto local y técnicas ancestrales. Reserva tu mesa para una experiencia gastronómica única.",
+  keywords: ["Gastrobar Vitoria", "Restaurante Vitoria-Gasteiz", "Cocina a la brasa", "El Chancho", "Gastrobar Alava", "Mejores restaurantes Vitoria"],
   authors: [{ name: "El Chancho Gastrobar" }],
+  metadataBase: new URL("https://elchanchogastrobar.com"),
   openGraph: {
-    title: "El Chancho Gastrobar | Sabor Andino y Brasa",
-    description: "Sabor Andino y técnicas ancestrales en el corazón de Vitoria-Gasteiz. Una experiencia honesta alrededor de la brasa.",
+    title: "El Chancho Gastrobar | Fuego, Origen & Contraste",
+    description: "Cocina honesta a la brasa en el corazón de Vitoria. Producto local, técnicas globales y una honestidad brutal.",
     url: "https://elchanchogastrobar.com",
     siteName: "El Chancho Gastrobar",
     images: [
       {
-        url: "https://elchanchogastrobar.com/assets/Foto-hero.webp",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "El Chancho Gastrobar - Cocina con honestidad",
+        alt: "El Chancho Gastrobar - Vitoria-Gasteiz",
       },
     ],
     locale: "es_ES",
@@ -40,12 +41,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "El Chancho Gastrobar | Vitoria",
-    description: "Brasas honestas y sabor andino en Vitoria-Gasteiz.",
-    images: ["https://elchanchogastrobar.com/assets/Foto-hero.webp"],
+    title: "El Chancho Gastrobar | Cocina a la Brasa",
+    description: "Fuego, origen y contraste en Vitoria-Gasteiz.",
+    images: ["/og-image.jpg"],
   },
   icons: {
-    icon: "/assets/Logo-Llama.svg",
+    icon: "/favicon.ico",
+  },
+  alternates: {
+    canonical: "https://elchanchogastrobar.com",
   },
 };
 

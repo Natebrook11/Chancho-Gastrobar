@@ -52,8 +52,17 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   position: relative;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  /* Prevent word cutting and hyphenation */
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+/* GLOBAL RESET */
+* {
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
 }
 
 /* Lenis Recommended CSS */

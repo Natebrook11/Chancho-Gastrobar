@@ -39,7 +39,7 @@ export default function Reservations() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <div className="res-animate h-[1px] w-24 bg-brand-gold mx-auto mb-12"></div>
         
-        <h2 className="res-animate font-sans font-black text-5xl md:text-9xl uppercase tracking-tighter leading-[0.85] mb-8 break-words">
+        <h2 className="res-animate font-sans font-black text-5xl md:text-9xl uppercase tracking-tighter leading-[0.85] mb-8">
           Reserva tu <br />
           <span className="text-brand-gold">Mesa</span>
         </h2>

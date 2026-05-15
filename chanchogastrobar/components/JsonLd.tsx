@@ -5,16 +5,18 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "El Chancho Gastrobar",
-    "image": "https://elchanchogastrobar.com/assets/Foto-hero.webp",
+    "image": "https://elchanchogastrobar.com/og-image.jpg",
     "url": "https://elchanchogastrobar.com",
     "telephone": "+34945000000",
     "priceRange": "$$",
-    "servesCuisine": "Cocina de brasa, Sabor Andino, Tapas modernas",
+    "menu": "https://elchanchogastrobar.com/#carta",
+    "servesCuisine": "Gastrobar, Cocina a la Brasa",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Portal de Castilla, 38",
       "addressLocality": "Vitoria-Gasteiz",
       "postalCode": "01007",
+      "addressRegion": "Álava",
       "addressCountry": "ES"
     },
     "geo": {
@@ -41,10 +43,6 @@ export default function JsonLd() {
         "opens": "13:30",
         "closes": "16:30"
       }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/elchancho_vitoria",
-      "https://www.facebook.com/elchancho_vitoria"
     ]
   };
 

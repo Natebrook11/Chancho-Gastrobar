@@ -88,7 +88,7 @@ export default function Gallery() {
         <div className="mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
             <div className="h-[1px] w-12 bg-brand-gold mb-6"></div>
-            <h2 className="font-sans font-black text-5xl md:text-8xl lg:text-9xl text-text-primary uppercase tracking-tighter leading-[0.85] break-words">
+            <h2 className="font-sans font-black text-5xl md:text-8xl lg:text-9xl text-text-primary uppercase tracking-tighter leading-[0.85]">
               Arte en <br />
               <span className="text-brand-gold">la mesa</span>
             </h2>

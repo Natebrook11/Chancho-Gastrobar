@@ -46,9 +46,9 @@ export default function History() {
            </span>
         </div>
 
-        <h2 className="history-reveal font-sans font-black text-5xl md:text-8xl text-text-primary uppercase tracking-tighter leading-[0.9] mb-12">
+        <h2 className="history-reveal font-sans font-black text-5xl md:text-8xl text-text-primary uppercase tracking-tighter leading-[0.9] mb-12 text-balance">
           Fuego, origen <br />
-          <span className="text-brand-gold">& contraste.</span>
+          <span className="text-brand-gold">& contraste</span>
         </h2>
 
         <div className="history-reveal max-w-2xl">
