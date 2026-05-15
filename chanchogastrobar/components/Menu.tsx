@@ -17,13 +17,13 @@ import {
 import { menuData } from "@/data/menu";
 
 const allergenConfig: Record<string, { icon: any, color: string, bg: string }> = {
-  "Gluten": { icon: Wheat, color: "#EAB308", bg: "rgba(234, 179, 8, 0.05)" },
-  "Lácteos": { icon: Milk, color: "#3B82F6", bg: "rgba(59, 130, 246, 0.05)" },
-  "Frutos Secos": { icon: Nut, color: "#92400E", bg: "rgba(146, 64, 14, 0.05)" },
-  "Pescado": { icon: Fish, color: "#06B6D4", bg: "rgba(6, 182, 212, 0.05)" },
-  "Marisco": { icon: Waves, color: "#EC4899", bg: "rgba(236, 72, 153, 0.05)" },
-  "Huevo": { icon: Egg, color: "#F59E0B", bg: "rgba(245, 158, 11, 0.05)" },
-  "Picante": { icon: Flame, color: "#EF4444", bg: "rgba(239, 68, 68, 0.05)" },
+  "Gluten": { icon: Wheat, color: "#B58B5D", bg: "rgba(181, 139, 93, 0.1)" },
+  "Lácteos": { icon: Milk, color: "#8B9DA9", bg: "rgba(139, 157, 169, 0.1)" },
+  "Frutos Secos": { icon: Nut, color: "#8D6E63", bg: "rgba(141, 110, 99, 0.1)" },
+  "Pescado": { icon: Fish, color: "#78909C", bg: "rgba(120, 144, 156, 0.1)" },
+  "Marisco": { icon: Waves, color: "#A1887F", bg: "rgba(161, 136, 127, 0.1)" },
+  "Huevo": { icon: Egg, color: "#D4B483", bg: "rgba(212, 180, 131, 0.1)" },
+  "Picante": { icon: Flame, color: "#BC5D58", bg: "rgba(188, 93, 88, 0.1)" },
 };
 
 const allergensList = Object.keys(allergenConfig);

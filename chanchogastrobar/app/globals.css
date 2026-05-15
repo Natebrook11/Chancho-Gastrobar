@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FDFBF7;
-  --foreground: #1A110A;
+  --background: #F9F6F0;
+  --foreground: #1F1A17;
 }
 
 @theme inline {
@@ -10,24 +10,24 @@
   --color-foreground: var(--foreground);
   
   /* Semantic Backgrounds */
-  --color-bg-primary: #FDFBF7;
+  --color-bg-primary: #F9F6F0;
   --color-bg-secondary: #FFFFFF;
-  --color-bg-dark: #2B1D11;
+  --color-bg-dark: #1A140F;
   
   /* Semantic Text Colors */
-  --color-text-primary: #1A110A;
-  --color-text-secondary: #4B3621;
-  --color-text-inverse: #FDFBF7;
-  --color-text-inverse-muted: #EADDCD;
+  --color-text-primary: #1F1A17;
+  --color-text-secondary: #5D4B3E;
+  --color-text-inverse: #F9F6F0;
+  --color-text-inverse-muted: #D9CEC1;
 
   /* Brand Colors */
-  --color-brand-gold: #DAA520;
+  --color-brand-gold: #d4a86a;
   
-  /* Legacy Colors (keeping for fallback if needed, though we will replace them) */
-  --color-chancho-gold: #DAA520;
-  --color-chancho-brown: #4B3621;
-  --color-chancho-cream: #FDFBF7;
-  --color-chancho-dark: #2B1D11;
+  /* Legacy Colors */
+  --color-chancho-gold: #d4a86a;
+  --color-chancho-brown: #5D4B3E;
+  --color-chancho-cream: #F9F6F0;
+  --color-chancho-dark: #1A140F;
 
   /* Fonts */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
