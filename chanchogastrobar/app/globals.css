@@ -37,6 +37,8 @@
 html, body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
@@ -48,6 +50,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Lenis Recommended CSS */

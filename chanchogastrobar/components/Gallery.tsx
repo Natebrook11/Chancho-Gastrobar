@@ -88,7 +88,7 @@ export default function Gallery() {
         <div className="mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
             <div className="h-[1px] w-12 bg-brand-gold mb-6"></div>
-            <h2 className="font-sans font-black text-6xl md:text-8xl lg:text-9xl text-text-primary uppercase tracking-tighter leading-[0.85]">
+            <h2 className="font-sans font-black text-5xl md:text-8xl lg:text-9xl text-text-primary uppercase tracking-tighter leading-[0.85] break-words">
               Arte en <br />
               <span className="text-brand-gold">la mesa</span>
             </h2>
@@ -103,7 +103,7 @@ export default function Gallery() {
         {/* Editorial Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           {/* Row 1 */}
-          <div onClick={() => setSelectedIdx(0)} className="gallery-item md:col-span-7 aspect-[16/10] relative overflow-hidden border border-text-primary/5 group cursor-pointer rounded-2xl">
+          <div onClick={() => setSelectedIdx(0)} className="gallery-item md:col-span-7 aspect-[16/10] relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[0].src} alt={photos[0].alt} fill className="object-cover" />
             </div>
@@ -113,7 +113,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          <div onClick={() => setSelectedIdx(1)} className="gallery-item md:col-span-5 aspect-[4/5] relative overflow-hidden border border-text-primary/5 group cursor-pointer md:mt-12 rounded-2xl">
+          <div onClick={() => setSelectedIdx(1)} className="gallery-item md:col-span-5 aspect-[4/5] relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer md:mt-12 rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[1].src} alt={photos[1].alt} fill className="object-cover" />
             </div>
@@ -124,7 +124,7 @@ export default function Gallery() {
           </div>
 
           {/* Row 2 */}
-          <div onClick={() => setSelectedIdx(2)} className="gallery-item md:col-span-4 aspect-square relative overflow-hidden border border-text-primary/5 group cursor-pointer rounded-2xl">
+          <div onClick={() => setSelectedIdx(2)} className="gallery-item md:col-span-4 aspect-square relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[2].src} alt={photos[2].alt} fill className="object-cover" />
             </div>
@@ -134,7 +134,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          <div onClick={() => setSelectedIdx(3)} className="gallery-item md:col-span-8 aspect-[16/9] relative overflow-hidden border border-text-primary/5 group cursor-pointer rounded-2xl">
+          <div onClick={() => setSelectedIdx(3)} className="gallery-item md:col-span-8 aspect-[16/9] relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[3].src} alt={photos[3].alt} fill className="object-cover" />
             </div>
@@ -145,7 +145,7 @@ export default function Gallery() {
           </div>
 
           {/* Row 3 */}
-          <div onClick={() => setSelectedIdx(6)} className="gallery-item md:col-span-5 aspect-square relative overflow-hidden border border-text-primary/5 group cursor-pointer rounded-2xl">
+          <div onClick={() => setSelectedIdx(6)} className="gallery-item md:col-span-5 aspect-square relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[6].src} alt={photos[6].alt} fill className="object-cover" />
             </div>
@@ -155,7 +155,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          <div onClick={() => setSelectedIdx(4)} className="gallery-item md:col-span-7 aspect-[4/3] relative overflow-hidden border border-text-primary/5 group cursor-pointer md:mt-12 rounded-2xl">
+          <div onClick={() => setSelectedIdx(4)} className="gallery-item md:col-span-7 aspect-[4/3] relative overflow-hidden ring-1 ring-text-primary/5 group cursor-pointer md:mt-12 rounded-2xl">
             <div className="inner-img absolute inset-0 w-full h-[120%] -top-[10%] transition-transform duration-1000 ease-expo group-hover:scale-110">
               <Image src={photos[4].src} alt={photos[4].alt} fill className="object-cover" />
             </div>

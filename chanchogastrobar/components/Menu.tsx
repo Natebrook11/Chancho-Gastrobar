@@ -87,7 +87,7 @@ export default function Menu() {
         <div className="mb-24 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-12">
           <div className="max-w-3xl">
             <div className="h-[1px] w-12 bg-brand-gold mb-8"></div>
-            <h2 className="font-sans font-black text-7xl md:text-9xl lg:text-[11rem] text-text-primary uppercase tracking-tighter leading-[0.8]">
+            <h2 className="font-sans font-black text-6xl md:text-9xl lg:text-[11rem] text-text-primary uppercase tracking-tighter leading-[0.8] break-words">
               La <br />
               <span className="text-brand-gold">Carta</span>
             </h2>
@@ -150,7 +150,7 @@ export default function Menu() {
                     <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block mb-2">
                       [ 0{idx + 1} ]
                     </span>
-                    <h3 className="font-sans font-black text-4xl md:text-5xl lg:text-7xl text-text-primary uppercase tracking-tighter leading-[0.9] whitespace-normal">
+                    <h3 className="font-sans font-black text-3xl md:text-5xl lg:text-7xl text-text-primary uppercase tracking-tighter leading-[0.9] whitespace-normal break-words">
                       {category.category}
                     </h3>
                     <div className="h-[1px] w-12 bg-brand-gold mt-6"></div>
