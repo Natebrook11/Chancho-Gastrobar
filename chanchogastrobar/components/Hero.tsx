@@ -68,7 +68,7 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center">
         <div className="overflow-visible py-4">
-          <h1 className="hero-content-reveal font-sans text-5xl md:text-8xl lg:text-[10rem] text-text-inverse font-black uppercase leading-[1.1] md:leading-[0.85] tracking-tighter drop-shadow-2xl">
+          <h1 className="hero-content-reveal font-sans text-5xl md:text-8xl lg:text-[10rem] text-text-inverse font-black uppercase leading-[1.1] md:leading-[0.85] tracking-tighter drop-shadow-2xl select-none">
             <span className="block md:hidden mb-2">Cocina</span>
             <span className="block md:hidden mb-2">con</span>
             <span className="hidden md:block mb-2">Cocina con</span>

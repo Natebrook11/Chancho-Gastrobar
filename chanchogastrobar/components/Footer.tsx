@@ -71,95 +71,123 @@ export default function Footer() {
   }, { scope: footerRef });
 
   return (
-    <footer ref={footerRef} id="contacto" className="relative bg-bg-dark text-text-inverse pt-24 md:pt-40 pb-12 px-6 md:px-12 overflow-hidden border-t border-white/10">
+    <footer ref={footerRef} id="contacto" className="relative bg-bg-dark text-text-inverse pt-24 md:pt-40 pb-12 px-6 md:px-12 overflow-hidden">
       {/* Texture Overlay */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
       
+      {/* Background Glows */}
+      <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-brand-gold/5 blur-[120px] pointer-events-none"></div>
+
       <div className="max-w-[1400px] mx-auto relative z-10">
         
-        {/* Superior Info Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 mb-32 relative z-10">
+        {/* Google Maps Section - Integrated */}
+        <div className="footer-section mb-32 overflow-hidden rounded-2xl border border-white/5 group relative h-[300px] md:h-[450px]">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.32623348123!2d-2.684123023423!3d42.844832971151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc25000000000%3A0x0!2sPortal%20de%20Castilla%2C%2038%2C%2001007%20Vitoria-Gasteiz!5e0!3m2!1ses!2ses!4v1715000000000!5m2!1ses!2ses" 
+            className="w-full h-full border-0 transition-all duration-1000 ease-expo" 
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+          {/* Map Overlay to prevent scroll hijacking */}
+          <div className="absolute inset-0 pointer-events-none group-hover:pointer-events-auto transition-all duration-300"></div>
+          <div className="absolute inset-0 pointer-events-none border border-white/10 rounded-2xl"></div>
+        </div>
+
+        {/* Main Info Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-32">
           
-          {/* Column 1: Brand & Socials */}
-          <div className="footer-section flex flex-col gap-8">
+          {/* Column 1: Brand & Socials (5/12) */}
+          <div className="footer-section lg:col-span-5 flex flex-col gap-10">
             <div className="h-[1px] w-12 bg-brand-gold"></div>
-            <p className="font-sans text-xl md:text-2xl leading-relaxed max-w-xs">
-              Sabor Andino, Alma Rústica. Fuego, brasas y honestidad en <span className="text-brand-gold italic">Vitoria-Gasteiz</span>.
-            </p>
-            <div className="flex gap-4">
+            <div>
+              <h3 className="font-sans font-black text-4xl md:text-5xl uppercase tracking-tighter mb-6 leading-none">
+                Donde el fuego <br /> <span className="text-brand-gold">tiene alma</span>
+              </h3>
+              <p className="font-sans text-lg md:text-xl leading-relaxed opacity-60 max-w-md">
+                Sabor Andino y técnicas ancestrales en el corazón de <span className="text-white border-b border-brand-gold/30">Vitoria-Gasteiz</span>. Una experiencia honesta alrededor de la brasa.
+              </p>
+            </div>
+            
+            <div className="flex gap-4 select-none">
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-text-inverse bg-white/5"
+                className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-text-inverse bg-white/5 hover:bg-brand-gold hover:text-black hover:border-brand-gold transition-all duration-500 hover:-translate-y-2"
               >
-                <Instagram size={20} />
+                <Instagram size={22} />
               </a>
               <a 
                 href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-text-inverse bg-white/5"
+                className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-text-inverse bg-white/5 hover:bg-brand-gold hover:text-black hover:border-brand-gold transition-all duration-500 hover:-translate-y-2"
               >
-                <Facebook size={20} />
+                <Facebook size={22} />
               </a>
             </div>
           </div>
 
-          {/* Column 2: Contact Details */}
-          <div className="footer-section space-y-8">
-            <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block">[ Localización ]</span>
-            <ul className="space-y-6 font-sans text-base leading-relaxed opacity-70">
-              <li className="flex items-start gap-4">
-                <MapPin size={20} className="shrink-0 text-brand-gold/60" />
-                <span>Portal de Castilla, 38<br/>01007 Vitoria-Gasteiz</span>
-              </li>
-              <li className="flex items-center gap-4">
-                <Phone size={20} className="shrink-0 text-brand-gold/60" />
-                <span>945 000 000</span>
-              </li>
-              <li className="flex items-center gap-4">
-                <Mail size={20} className="shrink-0 text-brand-gold/60" />
-                <span>hola@elchancho.com</span>
-              </li>
-            </ul>
-          </div>
+          {/* Column 2: Contact & Hours (7/12) */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-16">
+            <div className="footer-section space-y-10">
+              <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block">[ Encuéntranos ]</span>
+              <ul className="space-y-8 font-sans text-base md:text-lg leading-relaxed">
+                <li className="flex items-start gap-4 group">
+                  <MapPin size={24} className="shrink-0 text-brand-gold/60 group-hover:text-brand-gold transition-colors" />
+                  <span className="opacity-70 group-hover:opacity-100 transition-opacity">Portal de Castilla, 38<br/>01007 Vitoria-Gasteiz</span>
+                </li>
+                <li className="flex items-center gap-4 group">
+                  <Phone size={24} className="shrink-0 text-brand-gold/60 group-hover:text-brand-gold transition-colors" />
+                  <span className="opacity-70 group-hover:opacity-100 transition-opacity font-bold">945 000 000</span>
+                </li>
+                <li className="flex items-center gap-4 group">
+                  <Mail size={24} className="shrink-0 text-brand-gold/60 group-hover:text-brand-gold transition-colors" />
+                  <span className="opacity-70 group-hover:opacity-100 transition-opacity border-b border-white/10">hola@elchancho.com</span>
+                </li>
+              </ul>
+            </div>
 
-          {/* Column 3: Hours */}
-          <div className="footer-section space-y-8">
-            <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block">[ Servicio ]</span>
-            <ul className="space-y-4 font-sans text-base leading-relaxed">
-              <li className="flex justify-between border-b border-white/5 pb-2">
-                <span className="opacity-50">Mar - Jue</span>
-                <span className="text-brand-gold">13:30 - 23:30</span>
-              </li>
-              <li className="flex justify-between border-b border-white/5 pb-2">
-                <span className="opacity-50">Vie - Sáb</span>
-                <span className="text-brand-gold">13:30 - 00:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="opacity-50">Domingo</span>
-                <span className="text-brand-gold">13:30 - 16:30</span>
-              </li>
-            </ul>
+            <div className="footer-section space-y-10">
+              <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block">[ El Servicio ]</span>
+              <ul className="space-y-6 font-sans text-base md:text-lg leading-relaxed">
+                <li className="flex justify-between border-b border-white/5 pb-3 group">
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Mar - Jue</span>
+                  <span className="text-brand-gold font-bold">13:30 - 23:30</span>
+                </li>
+                <li className="flex justify-between border-b border-white/5 pb-3 group">
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Vie - Sáb</span>
+                  <span className="text-brand-gold font-bold">13:30 - 00:00</span>
+                </li>
+                <li className="flex justify-between group">
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Domingo</span>
+                  <span className="text-brand-gold font-bold">13:30 - 16:30</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        {/* Legal Bar */}
-        <div className="footer-legal pt-12 border-t border-white/5 flex flex-col md:row justify-between items-center gap-8 relative z-10 mb-20">
-          <div className="flex items-center gap-4 cursor-default">
-            <div className="w-8 h-8 relative opacity-20 grayscale invert">
+        {/* Legal & Brand Bar */}
+        <div className="footer-legal pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10 mb-20">
+          <div className="flex items-center gap-6 opacity-40 hover:opacity-100 transition-opacity duration-500">
+            <div className="w-10 h-10 relative grayscale invert">
               <Image src="/assets/Logo-Llama.svg" alt="Llama" fill className="object-contain" />
             </div>
-            <p className="font-sans text-[10px] uppercase tracking-[0.2em] opacity-40">
-              © 2026 El Chancho Gastrobar <span className="mx-2 text-brand-gold">|</span> Sabor con Alma
+            <p className="font-sans text-[10px] uppercase tracking-[0.2em]">
+              © 2026 El Chancho Gastrobar <span className="mx-3 text-brand-gold">|</span> Vitoria-Gasteiz
             </p>
+          </div>
+          <div className="flex gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-white/40">
+            <a href="#" className="hover:text-brand-gold transition-colors">Privacidad</a>
+            <a href="#" className="hover:text-brand-gold transition-colors">Cookies</a>
           </div>
         </div>
 
-        {/* Massive Logo Section - Refined for Mobile */}
+        {/* Massive Logo Section */}
         <div className="mt-20 md:mt-32 -mb-8 overflow-hidden footer-massive-text select-none pointer-events-none">
-          <h2 className="text-[15vw] md:text-[18.5vw] font-black uppercase text-center leading-[0.8] tracking-tighter text-white">
+          <h2 className="text-[15vw] md:text-[18.5vw] font-black uppercase text-center leading-[0.8] tracking-tighter text-white opacity-5 select-none">
             EL CHANCHO
           </h2>
         </div>

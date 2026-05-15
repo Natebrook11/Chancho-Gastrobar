@@ -85,7 +85,7 @@ export default function Navbar() {
             <a 
               href="#inicio" 
               onClick={(e) => handleLinkClick(e, "#inicio")}
-              className="flex items-center gap-3 group shrink-0"
+              className="flex items-center gap-3 group shrink-0 select-none"
             >
               <div className="relative w-8 h-8 md:w-9 md:h-9 overflow-hidden">
                 <Image

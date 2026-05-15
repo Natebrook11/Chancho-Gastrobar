@@ -95,6 +95,7 @@ html.lenis, html.lenis body {
   position: relative;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  user-select: none;
   text-decoration: none;
   z-index: 1;
   border: 1px solid transparent;
