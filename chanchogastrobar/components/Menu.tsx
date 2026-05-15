@@ -136,6 +136,61 @@ export default function Menu() {
           </div>
         </div>
 
+        {/* Special Menus Feature */}
+        <div className="mb-32 md:mb-48 space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            {/* Menú del Día */}
+            <div className="bg-bg-dark text-text-inverse p-10 md:p-14 rounded-sm relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 blur-[60px]"></div>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.3em] block mb-6">[ De Lunes a Viernes ]</span>
+                  <h3 className="font-sans font-black text-4xl md:text-6xl uppercase tracking-tighter leading-[0.85] mb-8">
+                    Menú <br />
+                    <span className="text-brand-gold">del Día</span>
+                  </h3>
+                  <p className="font-sans text-base md:text-lg opacity-80 leading-relaxed max-w-md mb-8">
+                    Cocina casera con toques internacionales que cambia cada semana. Incluye primeros a elegir, un segundo a la brasa, pan, bebida y postre.
+                  </p>
+                  <div className="text-brand-gold text-4xl md:text-5xl font-black mb-8">15,90€</div>
+                </div>
+                <div className="pt-6 border-t border-white/10">
+                   <p className="text-[10px] uppercase tracking-widest text-text-inverse/40 font-bold">¡Te invitamos a un café!</p>
+                   <p className="text-[9px] uppercase tracking-widest text-text-inverse/20 mt-2">* Sube un storie etiquetándonos</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Menú Degustación */}
+            <div className="bg-bg-secondary border border-text-primary/10 p-10 md:p-14 rounded-sm relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/5 blur-[60px]"></div>
+              <div className="relative z-10">
+                <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.3em] block mb-6">[ Experiencia Completa ]</span>
+                <h3 className="font-sans font-black text-4xl md:text-6xl uppercase tracking-tighter leading-[0.85] mb-8 text-text-primary">
+                  Menú <br />
+                  <span className="text-brand-gold">Degustación</span>
+                </h3>
+                <div className="space-y-6 mb-10">
+                  <div>
+                    <h4 className="text-[10px] uppercase font-bold text-text-secondary/40 tracking-widest mb-3">Entrantes (Pintxo Format)</h4>
+                    <p className="text-sm text-text-primary leading-relaxed">Croqueta de picaña y trufa · Taco de pulpo al wok · Carpaccio de chuleta al kamado.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-[10px] uppercase font-bold text-text-secondary/40 tracking-widest mb-3">Segundos a elegir</h4>
+                    <p className="text-sm text-text-primary leading-relaxed">Picaña al kamado · Lubina a la brasa · Arroz de langostino y vieira · Abanico ibérico.</p>
+                  </div>
+                </div>
+                <div className="flex items-end justify-between pt-6 border-t border-text-primary/5">
+                  <div className="text-text-primary text-4xl md:text-5xl font-black">38€</div>
+                  <span className="text-[10px] uppercase font-bold text-text-secondary/40 tracking-widest mb-2">Por persona</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         {/* Menu Content - Editorial Layout */}
         <div className="space-y-24 md:space-y-32">
           {menuData.map((category, idx) => {

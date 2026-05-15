@@ -13,7 +13,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Esencia", href: "#historia" },
     { name: "Galería", href: "#galeria" },
-    { name: "La Carta", href: "#carta" },
+    { name: "Carta", href: "#carta" },
+    { name: "Reseñas", href: "#reviews" },
     { name: "Contacto", href: "#contacto" },
   ];
 
@@ -74,7 +75,7 @@ export default function Navbar() {
     <header className="fixed top-6 left-0 w-full z-50 px-4 pointer-events-none">
       <nav 
         ref={navRef}
-        className={`max-w-4xl mx-auto pointer-events-auto bg-bg-primary/20 backdrop-blur-xl border border-text-primary/5 shadow-[0_8px_32px_rgba(75,54,33,0.1)] transition-all duration-500 ease-expo overflow-hidden rounded-[2rem] px-6 ${
+        className={`max-w-4xl mx-auto pointer-events-auto bg-bg-primary/20 backdrop-blur-xl border border-text-primary/5 shadow-[0_8px_32px_rgba(75,54,33,0.1)] transition-all duration-500 ease-expo overflow-hidden rounded-[2rem] px-4 md:px-6 ${
           isOpen ? "py-6" : "py-2 md:py-3"
         }`}
       >
@@ -85,9 +86,9 @@ export default function Navbar() {
             <a 
               href="#inicio" 
               onClick={(e) => handleLinkClick(e, "#inicio")}
-              className="flex items-center gap-3 group shrink-0 select-none"
+              className="flex items-center gap-2 group shrink-0 select-none"
             >
-              <div className="relative w-8 h-8 md:w-9 md:h-9 overflow-hidden">
+              <div className="relative w-7 h-7 md:w-8 md:h-8 overflow-hidden">
                 <Image
                   src="/assets/Logo-Llama.svg"
                   alt="Logo"
@@ -96,13 +97,13 @@ export default function Navbar() {
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                 />
               </div>
-              <span className="font-sans font-black text-lg md:text-xl text-text-primary tracking-tighter uppercase leading-none">
+              <span className="font-sans font-black text-base md:text-lg text-text-primary tracking-tighter uppercase leading-none">
                 El Chancho
               </span>
             </a>
 
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-5">
               {navLinks.map((link) => (
                 <NavLink key={link.name} link={link} />
               ))}
@@ -171,7 +172,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="tel:+34945000000"
+                href="tel:+34945025926"
                 className="btn-premium btn-outline w-full group gap-3 flex items-center justify-center"
               >
                 <Phone size={16} className="shrink-0" />

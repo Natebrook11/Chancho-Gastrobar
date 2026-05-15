@@ -51,9 +51,12 @@ export default function History() {
           <span className="text-brand-gold">& contraste</span>
         </h2>
 
-        <div className="history-reveal max-w-2xl">
+        <div className="history-reveal max-w-2xl space-y-8">
           <p className="text-text-secondary leading-relaxed font-sans text-xl md:text-2xl font-light tracking-tight italic">
-            "Unimos la fuerza de las brasas con la elegancia andina. Producto local, técnicas globales y una honestidad brutal. Sin artificios, solo sabor."
+            "Ubicados en Portal de Castilla, junto al Parque del Prado, el Chef Boris y Nadia lideran una propuesta de cocina casera con influencias internacionales."
+          </p>
+          <p className="text-text-primary/60 font-sans text-lg md:text-xl leading-relaxed">
+            Nuestro menú cambia semanalmente para integrar productos frescos y nuevas recetas, combinando la tradición local con el uso de nuestras brasas japonesas Kamado.
           </p>
         </div>
 

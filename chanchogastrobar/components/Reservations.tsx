@@ -51,7 +51,7 @@ export default function Reservations() {
         <div className="res-animate flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Call Button */}
           <a 
-            href="tel:+34945000000" 
+            href="tel:+34945025926" 
             className="btn-premium btn-outline w-full md:w-auto gap-4 group flex items-center justify-center"
           >
             <Phone size={16} />

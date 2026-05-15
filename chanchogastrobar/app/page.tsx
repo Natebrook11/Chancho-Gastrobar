@@ -4,6 +4,7 @@ import History from "@/components/History";
 import Gallery from "@/components/Gallery";
 import Menu from "@/components/Menu";
 import Reservations from "@/components/Reservations";
+import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Gallery />
         <Menu />
         <Reservations />
+        <Reviews />
       </main>
       <Footer />
     </>

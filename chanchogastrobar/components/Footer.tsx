@@ -140,7 +140,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-4 group">
                   <Phone size={24} className="shrink-0 text-brand-gold/60 group-hover:text-brand-gold transition-colors" />
-                  <span className="opacity-70 group-hover:opacity-100 transition-opacity font-bold">945 000 000</span>
+                  <span className="opacity-70 group-hover:opacity-100 transition-opacity font-bold">945 02 59 26</span>
                 </li>
                 <li className="flex items-center gap-4 group">
                   <Mail size={24} className="shrink-0 text-brand-gold/60 group-hover:text-brand-gold transition-colors" />
@@ -153,16 +153,16 @@ export default function Footer() {
               <span className="text-brand-gold font-sans font-bold text-[10px] uppercase tracking-[0.2em] block">[ El Servicio ]</span>
               <ul className="space-y-6 font-sans text-base md:text-lg leading-relaxed">
                 <li className="flex justify-between border-b border-white/5 pb-3 group">
-                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Mar - Jue</span>
-                  <span className="text-brand-gold font-bold">13:30 - 23:30</span>
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Lunes</span>
+                  <span className="text-brand-gold font-bold">12:00 - 23:00</span>
                 </li>
                 <li className="flex justify-between border-b border-white/5 pb-3 group">
-                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Vie - Sáb</span>
-                  <span className="text-brand-gold font-bold">13:30 - 00:00</span>
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Mar, Mié y Dom</span>
+                  <span className="text-brand-gold font-bold">12:00 - 17:00</span>
                 </li>
                 <li className="flex justify-between group">
-                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Domingo</span>
-                  <span className="text-brand-gold font-bold">13:30 - 16:30</span>
+                  <span className="opacity-50 group-hover:opacity-100 transition-opacity">Jue, Vie y Sáb</span>
+                  <span className="text-brand-gold font-bold">12:00 - 00:00</span>
                 </li>
               </ul>
             </div>
