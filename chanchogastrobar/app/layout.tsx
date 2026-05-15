@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+import { Analytics } from "@vercel/analytics/react";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/assets/Logo-Llama.svg",
   },
   alternates: {
     canonical: "https://elchanchogastrobar.com",
@@ -68,6 +69,7 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
