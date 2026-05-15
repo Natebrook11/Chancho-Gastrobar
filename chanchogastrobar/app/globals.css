@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #1A110A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Semantic Backgrounds */
+  --color-bg-primary: #FDFBF7;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-dark: #2B1D11;
+  
+  /* Semantic Text Colors */
+  --color-text-primary: #1A110A;
+  --color-text-secondary: #4B3621;
+  --color-text-inverse: #FDFBF7;
+  --color-text-inverse-muted: #EADDCD;
+
+  /* Brand Colors */
+  --color-brand-gold: #DAA520;
+  
+  /* Legacy Colors (keeping for fallback if needed, though we will replace them) */
+  --color-chancho-gold: #DAA520;
+  --color-chancho-brown: #4B3621;
+  --color-chancho-cream: #FDFBF7;
+  --color-chancho-dark: #2B1D11;
+
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Utility for text reveals */
+.clip-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.ease-expo {
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* Premium Button System - Cinematic Refined */
+.btn-premium {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.8rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  text-decoration: none;
+  z-index: 1;
+  border: 1px solid transparent;
+}
+
+.btn-premium::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: -1;
+}
+
+.btn-premium:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-premium:hover::before {
+  height: 100%;
+}
+
+.btn-premium:active {
+  transform: translateY(-1px);
+}
+
+/* Primary: Gold to White */
+.btn-primary {
+  background: var(--color-brand-gold);
+  color: #000000;
+  border-color: var(--color-brand-gold);
+}
+
+.btn-primary::before {
+  background: #FFFFFF;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+/* Secondary: White to Gold */
+.btn-secondary {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+.btn-secondary::before {
+  background: var(--color-brand-gold);
+}
+
+.btn-secondary:hover {
+  color: #000000;
+  border-color: var(--color-brand-gold);
+}
+
+/* Outline: Ghost to White */
+.btn-outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline::before {
+  background: #FFFFFF;
+}
+
+.btn-outline:hover {
+  color: #000000;
+  border-color: #FFFFFF;
+}
