@@ -15,7 +15,6 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-import { Analytics } from "@vercel/analytics/react";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -69,7 +68,6 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
-        <Analytics />
       </body>
     </html>
   );
